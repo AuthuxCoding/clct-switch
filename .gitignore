@@ -11,3 +11,7 @@ build/
 
 # ephemeral
 ephemeral/
+
+# Temporary build staging
+pkgroot/
+scripts/

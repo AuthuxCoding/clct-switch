@@ -5,8 +5,8 @@ APP_NAME="CLCT Switch.app"
 APP_SOURCE="dist/$APP_NAME"
 PKG_ROOT="pkgroot"
 SCRIPTS_DIR="scripts"
-PKG_NAME="CC Switch Installer.pkg"
-IDENTIFIER="com.ccswitch.installer"
+PKG_NAME="CLCT Switch Installer.pkg"
+IDENTIFIER="com.clctswitch.installer"
 VERSION="1.0.0"
 
 if [ ! -d "$APP_SOURCE" ]; then

@@ -1,4 +1,4 @@
-# cc_switch
+# clct_switch
 
 A new Flutter project.
 

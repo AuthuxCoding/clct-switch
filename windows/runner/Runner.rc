@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.ccswitch" "\0"
-            VALUE "FileDescription", "CC Switch" "\0"
+            VALUE "CompanyName", "com.clctswitch" "\0"
+            VALUE "FileDescription", "CLCT Switch" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "CC Switch" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.ccswitch. All rights reserved." "\0"
-            VALUE "OriginalFilename", "CC Switch.exe" "\0"
-            VALUE "ProductName", "CC Switch" "\0"
+            VALUE "InternalName", "CLCT Switch" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 com.clctswitch. All rights reserved." "\0"
+            VALUE "OriginalFilename", "CLCT Switch.exe" "\0"
+            VALUE "ProductName", "CLCT Switch" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

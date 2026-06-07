@@ -10,7 +10,7 @@ class CCApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CC Switch',
+      title: 'CLCT Switch',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 32),
             Text(
-              'CC Switch',
+              'CLCT Switch',
               style: theme.textTheme.headlineLarge?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: theme.colorScheme.primary,

@@ -3,7 +3,7 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DIST_DIR="$SCRIPT_DIR/dist"
 
-echo "🚀 CC Switch - Building All Platforms"
+echo "🚀 CLCT Switch - Building All Platforms"
 echo "======================================"
 echo ""
 
@@ -21,12 +21,12 @@ flutter build macos --release
 rm -rf pkgroot scripts 2>/dev/null
 mkdir -p pkgroot/Applications
 mkdir -p scripts
-cp -R "build/macos/Build/Products/Release/CC Switch.app" pkgroot/Applications/
+cp -R "build/macos/Build/Products/Release/CLCT Switch.app" pkgroot/Applications/
 
 # postinstall script - auto-sign on user's machine
 cat > scripts/postinstall << 'SCRIPT'
 #!/bin/bash
-APP_PATH="/Applications/CC Switch.app"
+APP_PATH="/Applications/CLCT Switch.app"
 xattr -rd com.apple.quarantine "$APP_PATH" 2>/dev/null
 # Try user's dev cert, fall back to ad-hoc
 CERT=$(security find-identity -v -p codesigning 2>/dev/null | grep -o '"[^"]*"' | head -1 | tr -d '"')
@@ -35,14 +35,14 @@ if [ -n "$CERT" ]; then
 else
     codesign --force --deep --sign - "$APP_PATH" 2>/dev/null
 fi
-echo "✅ CC Switch installed to /Applications"
+echo "✅ CLCT Switch installed to /Applications"
 exit 0
 SCRIPT
 chmod +x scripts/postinstall
 
 pkgbuild \
   --root pkgroot \
-  --identifier com.ccswitch.ccSwitch \
+  --identifier com.clctswitch.clctSwitch \
   --version 1.0.0 \
   --install-location / \
   --scripts scripts \

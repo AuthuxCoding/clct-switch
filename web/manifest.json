@@ -1,6 +1,6 @@
 {
-    "name": "cc_switch",
-    "short_name": "cc_switch",
+    "name": "clct_switch",
+    "short_name": "clct_switch",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
