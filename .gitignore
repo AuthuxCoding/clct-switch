@@ -1,0 +1,13 @@
+# Build
+build/
+.dart_tool/
+*.iml
+.DS_Store
+.fseventsd
+/.idea/
+
+# Dist (large files, use GitHub Releases instead)
+/dist/
+
+# ephemeral
+ephemeral/
